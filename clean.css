@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background: transparent;
 }
 body {
-  line-height: 1.2;
+  line-height: 1;
 }
 ol, ul {
   list-style: none;
@@ -32,8 +32,8 @@ table {
 body {
   background: #FFF;
   color: #000;
-  font-family: Arial, Liberation Sans, DejaVu Sans, sans-serif;
-  font-size: 80%;
+  font-family: "AxelBold", "Lucida Grande", "Verdana", Arial, Liberation Sans, DejaVu Sans, sans-serif;
+  font-size: 70%;
   text-align: center;
 }
 code {
