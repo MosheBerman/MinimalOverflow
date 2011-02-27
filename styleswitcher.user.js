@@ -36,6 +36,10 @@
 //	Potential DOM conflict:
 //	This script uses the id "id_toggler_link" for the toggle link.
 //
+//
+//
+//
+//	TODO: Add persistence cookie
 //	
 
 /* ---------------------- (Global) Variables ----------------------- */
