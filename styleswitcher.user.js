@@ -118,6 +118,7 @@ function toggle(){
 				
 				//Switch (back) to the old stylesheet
 				switchToStylesheet(pathToOldStylesheet);
+				return;
 			}
 		}
 	}	
