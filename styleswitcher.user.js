@@ -32,6 +32,14 @@
 //
 // ==/UserScript==
 
+
+//
+//	Invoke the userscript:
+//
+
+main();
+
+
 /* ---------------------- (Global) Variables ----------------------- */
 
 //This URL will be loaded as the page's stylesheet "link" element
@@ -55,15 +63,9 @@ function switchToStylesheet(sheet){
 
 	for(var i=0; i<linkElements.length; i++){	
 		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
-	
-			//If the path to the old stylesheet hasn't been set,	
-			//store it for use later
-			if(pathToOldStylesheet == ""){
-				pathToOldStylesheet = linkElements[i].href.toString();
-			}
 		
 			//apply the new stylesheet
-			linkElements[i].href = pathToNewStylesheet;
+			linkElements[i].href = sheet;
 			
 			//We only want to replace the first stylesheet, so return.
 			//If SO decides to override anything here, just put it in a 
@@ -87,7 +89,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcher.innerText = "toggle theme";
 	themeSwitcher.onclick = toggle;
 	
-	//Add the divider and the toggler
+	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 }
@@ -98,8 +100,6 @@ function injectSwitcherIntoPage(){
 //
 
 function toggle(){
-	
-	alert("false;^2");
 	
 	//Find the stylesheet "link" element
 	for(var i=0; i<linkElements.length; i++){	
@@ -124,8 +124,33 @@ function toggle(){
 	}	
 }
 
-switchToStylesheet(pathToNewStylesheet);
-injectSwitcherIntoPage();
+//
+//	Store a global reference to the initial stylesheet
+//
 
+function storePathToOriginalStylesheet(){
+
+	for(var i=0; i<linkElements.length; i++){	
+		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
+			pathToOldStylesheet = linkElements[i].href.toString();
+			return;
+		}
+	}
+	
+}
+
+
+//
+//	The entry point of the userscript.
+//	I called it main for lack of originality.
+//	It's not like C/Java programs start with main 
+//	or anything like that. :P
+//
+
+fuction main(){
+	injectSwitcherIntoPage();
+	storePathToOriginalStylesheet();
+	switchToStylesheet(pathToNewStylesheet);
+}
 
 
