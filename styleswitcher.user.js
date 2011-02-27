@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.8.1
+// @version 0.0.8.2
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -154,7 +154,7 @@ function main(){
 	}
 	
 	//Clean up the Stack Exchange logo as necessary
-	removeStackExchangeFromLogo();
+	//removeStackExchangeFromLogo();
 		
 	//switch to the selected stylesheet
 	switchToStylesheet(localStorage['pathToStylesheet']);
