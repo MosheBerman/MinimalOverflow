@@ -2965,13 +2965,13 @@ table.full-diff td {
 }
 .share-answer .fb-share, .share-answer .twitter-share {
   display: inline-block !important;
-  margin: 0;
   vertical-align: middle;
   
 }
 
 .fb-share .twitter-share{
 	margin: 5px !important;
+	padding: 5px; !important;
 }
 
 .share-answer a {
