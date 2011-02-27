@@ -808,7 +808,7 @@ a.comment-user.owner {
   height: 61px;
   width: 250px;
   float: left;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #header #hmenus {
   width: 705px;
@@ -821,7 +821,7 @@ a.comment-user.owner {
   margin: 0px 35px 0px 0px;
 }
 #hlinks {
-  margin-right: 20px !important;
+  margin-right: 10px !important;
 }
 #hlinks a {
   font-weight: bold;
@@ -855,11 +855,12 @@ a.comment-user.owner {
 .nav ul {
   margin: 0;
 }
+
 .nav li {
   background: none;
   display: block;
   float: left;
-  margin: 10px 2px;
+  margin: 10px 2px 20px 2px;
 }
 
 
@@ -2064,7 +2065,8 @@ div.form-item-info {
   height: 90px;
   display: block;
   float: left;
-  margin-top: 10px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .envelope-off, .envelope-on {
