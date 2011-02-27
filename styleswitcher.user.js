@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.7.1
+// @version 0.0.7.2
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -130,7 +130,6 @@ function toggle(){
 //
 
 function storePathToOriginalStylesheet(){
-
 	for(var i=0; i<linkElements.length; i++){	
 		if(linkElements[i].getAttribute("rel") == "stylesheet"){
 			pathToOldStylesheet = linkElements[i].href;
@@ -150,7 +149,7 @@ function storePathToOriginalStylesheet(){
 function main(){
 	injectSwitcherIntoPage();
 	storePathToOriginalStylesheet();
-	switchToStylesheet(pathToNewStylesheet);
+	toggle();
 }
 
 
