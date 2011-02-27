@@ -857,12 +857,10 @@ a.comment-user.owner {
   background: #777;
   display: block;
   float: left;
-  margin-right: 0px;
+  margin-right: 10px;
+
 }
 
-.nav li:first-child{
-  border-radius: 5px;
-}
 
 .nav .youarehere {
   background: #ddd;
@@ -881,6 +879,9 @@ a.comment-user.owner {
   padding: 6px 12px 6px 12px;
   text-decoration: none;
   background-color: #acacac !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;  
 }
 .askquestion {
   float: right;
