@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Load a stylesheet into a website
-// @version 0.0.5.3
+// @version 0.0.5.4
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
