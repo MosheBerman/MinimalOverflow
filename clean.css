@@ -1036,13 +1036,13 @@ a.comment-user.owner {
 }
 .votes {
   color: #555;
-  padding: 0 0 7px 0;
+  padding: 0;
   text-align: center;
 }
 .narrow .votes {
   background: #eee;
   float: left;
-  margin: 0 3px 0 0;
+  margin: 0;
   padding: 5px;
   width: 38px;
   height: 38px;
