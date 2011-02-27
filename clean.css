@@ -868,14 +868,14 @@ a.comment-user.owner {
 .nav .youarehere {
   color: #333;
   border: 1px #a5a5a5 solid;
-  
+  padding: 0;
 }
 .youarehere a {
 
 }
 .nav li:hover {
 	border: #333 1px solid;
-
+	padding: 0;
 }
 .nav a {
   color: #333;
