@@ -1124,8 +1124,7 @@ a.comment-user.owner {
 	color: #000;
 	background: #aaa;
 	margin: 1px;
-	border: 1px #aaa solid;
-	
+	border: 1px #000 solid;
 }
 .answered-accepted strong {
   color: #E1E1E1;
