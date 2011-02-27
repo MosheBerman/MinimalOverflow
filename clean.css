@@ -309,13 +309,14 @@ p code {
   text-decoration: underline;
   color: #ddd;
 }
+
 #notify-container span.notify-close {
-  background-color: #FAD163;
+  background-color: #eee;
+  color: #333
   float: right;
   margin-right: 20px;
-  border: 2px solid #735005;
-  padding-left: 4px;
-  padding-right: 4px;
+  border: 2px solid #333;
+  padding: 4px;
   text-decoration: none;
   display: block;
   cursor: pointer;
