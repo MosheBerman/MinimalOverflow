@@ -813,7 +813,7 @@ a.comment-user.owner {
   width: 250px;
   float: left;
   margin-top: 10px;
-  
+  margin-right: 10px;
 }
 
 #hlogo{
@@ -823,7 +823,7 @@ a.comment-user.owner {
 #header #hmenus {
   width: 705px;
   float: left;
-  padding: 0 0 10px 10px;
+  padding: 0px 0px 10px 5px;
   margin-top: 10px;
 }
 #header #topbar #hlinks {
