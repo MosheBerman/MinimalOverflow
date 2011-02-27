@@ -879,10 +879,12 @@ a.comment-user.owner {
 .askquestion {
   float: right;
 }
+
 #nav-askquestion {
   margin-right: 0px;
 }
 #sidebar {
+  display: none;
   overflow: hidden;
   float: right;
   margin-bottom: 60px;
