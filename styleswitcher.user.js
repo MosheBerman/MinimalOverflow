@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and a toggler
-// @version 0.0.5.8
+// @version 0.0.5.9
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -80,15 +80,15 @@ function injectSwitcherIntoPage(){
 	var themeSwitcherDivider = document.createElement("span");
 	
 	//set up the divider
-	themeSwitcherDivider.class = "lsep";
-	themeSwitcherDivider.innerText = "|";
+	themeSwitcherDivider.className = "lsep";
+	themeSwitcherDivider.innerText = "| ";
 	
 	//Set up the toggler
 	themeSwitcher.innerText = "toggle theme";
-	themeSwitcher.onclick = toggle;
+	themeSwitcher.onClick = toggle;
 	
 	//Add the divider and the toggler
-		document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
+	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 }
 
