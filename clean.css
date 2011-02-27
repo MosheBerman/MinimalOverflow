@@ -1556,8 +1556,11 @@ div.form-item-info {
 }
 
 #interestingTags .post-tag:hover{
-  color: #6e6e6e;
-  border: none;
+  color: #7d7d7d !important;
+  text-decoration: none;
+  border: 1px solid #7d7d7d;
+  background-color: #fff;
+  padding: 1px;
 }
 
 .badge, .badge-tag {
