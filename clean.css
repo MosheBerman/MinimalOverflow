@@ -51,7 +51,7 @@ textarea {
 input, select, button {
   border: 1px solid #999;
   font-size: 100%;
-  font-family: Trebuchet MS, Liberation Sans, DejaVu Sans, sans-serif;
+  font-family: "AxelBold", "Lucida Grande", "Verdana",Trebuchet MS, Liberation Sans, DejaVu Sans, sans-serif;
 }
 input {
   margin: 5px 0px 5px 0px;
@@ -302,7 +302,6 @@ p code {
 }
 #notify-container div {
   background-color: #F4A83D;
-  border-bottom: 1px solid #D6800C;
   padding: 7px 0;
 }
 #notify-container a {
@@ -834,9 +833,7 @@ a.comment-user.owner {
   margin: 0px 0px 10px 0px;
   padding: 7px;
   font-weight: bold;
-  color: #000;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  color: #3f3f3f;
 }
 #system-message a {
   color: #555;
