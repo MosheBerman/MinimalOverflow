@@ -831,7 +831,7 @@ a.comment-user.owner {
   clear: both;
   text-align: center;
   margin: 0px 0px 10px 0px;
-  padding: 7px;
+  padding: 10px;
   font-weight: bold;
   background-color: #ccc;
   color: #fff;
@@ -851,7 +851,7 @@ a.comment-user.owner {
   font-size: 125%;
 }
 .nav ul {
-  margin: 0;
+  margin: 10px 0;
 }
 .nav li {
   background: none;
@@ -865,14 +865,14 @@ a.comment-user.owner {
 
 
 .nav .youarehere {
-  color: #3333;
+  color: #333;
   
 }
 .youarehere a {
 
 }
 .nav li:hover {
-	background-color: #ccc;
+	border: #333 2px solid;
 }
 .nav a {
   color: #333;
