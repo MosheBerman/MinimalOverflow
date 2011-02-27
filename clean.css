@@ -1129,8 +1129,7 @@ a.comment-user.owner {
 }
 .unanswered {
   background: #fff;
-  color: #000;
-  border: 1px dashed #666;
+  color: #444;
 }
 .summary {
   float: left;
@@ -2724,7 +2723,7 @@ ul.seNavLinks li a:hover, ul.seNavLinks li a:focus {
   width: 670px;
 }
 .answer-summary .post-menu, .question-summary .post-menu {
-  margin-top: 12px;
+  margin-top: 20px;
 }
 .answer-summary.question-summary .answer-votes {
   font-size: 120%;
