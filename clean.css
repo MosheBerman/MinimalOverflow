@@ -1533,6 +1533,7 @@ div.form-item-info {
   color: #6e6e6e;
   text-decoration: none;
   border: 1px solid #848484;
+  padding: 3px;
 }
 
 #interestingTags .post-tag{	
