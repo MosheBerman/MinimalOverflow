@@ -812,7 +812,7 @@ a.comment-user.owner {
   width: 705px;
   float: left;
   padding: 10px 0px 20px 5px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 #header #topbar #hlinks {
   float: left;
@@ -2060,6 +2060,7 @@ div.form-item-info {
   display: block;
   background-position: 0px 0px;
   float: left;
+  margin-top: 10px;
 }
 .envelope-off, .envelope-on {
   background-position: 0px -805px;
