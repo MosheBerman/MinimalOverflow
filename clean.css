@@ -810,6 +810,7 @@ a.comment-user.owner {
   float: left;
   margin-top: 20px;
   overflow: hidden;
+  margin-bottom: 10px;  
 }
 
 #hlogo{
@@ -2069,14 +2070,14 @@ div.form-item-info {
   font-size: 26px;
   line-height: 1.5;
   width: 250px;
-  height: 100px;
+  height: 80px;
   display: block;
   float: left;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 #content #question-header a{
-	clear: both;
 	text-align: left;
 }
 
