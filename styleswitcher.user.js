@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and a toggler
-// @version 0.0.6.4
+// @version 0.0.6.5
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
