@@ -2076,6 +2076,7 @@ div.form-item-info {
 }
 
 #content #question-header a{
+	clear: both;
 	text-align: left;
 }
 
