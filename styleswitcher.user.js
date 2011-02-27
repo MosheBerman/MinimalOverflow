@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.7
+// @version 0.0.7.1
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -31,6 +31,12 @@
 // @author Moshe Berman
 //
 // ==/UserScript==
+
+//
+//	Potential DOM conflict:
+//	This script uses the id "id_toggler_link" for the toggle link.
+//
+//	
 
 /* ---------------------- (Global) Variables ----------------------- */
 
@@ -82,7 +88,8 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.innerText = "| ";
 	
 	//Set up the toggler
-	themeSwitcher.innerText = "toggle theme";
+	themeSwitcher.innerText = "minimalist style";
+	themeSwitcher.id = "id_toggler_link";
 	themeSwitcher.onclick = toggle;
 	
 	//Add the divider and the toggler in the navbar
@@ -106,10 +113,12 @@ function toggle(){
 	
 			if(linkElements[i].href == pathToOldStylesheet){
 				switchToStylesheet(pathToNewStylesheet);
+				document.getElementById("id_toggler_link").innerText = "regular style";
 			}else{
 									
 				//Otherwise, switch (back) to the old stylesheet
 				switchToStylesheet(pathToOldStylesheet);
+				document.getElementById("id_toggler_link").innerText = "minimalist style";				
 				return;
 			}
 		}
