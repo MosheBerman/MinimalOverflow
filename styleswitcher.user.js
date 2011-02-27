@@ -67,4 +67,43 @@ function switchToStylesheet(sheet){
 	}
 }
 
+function injectSwitcherIntoPage(){
+
+	//create the switcher link
+	var themeSwitcher = document.createElement("a");
+	
+	//Set up the toggler
+	themeSwitcher.innerText = "Toggle Theme";
+	themeSwitcher.onclick = toggle();
+	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
+}
+
+function toggle(){
+	
+	//Find the "stylesheet" <link /> element
+	for(var i=0; i<linkElements.length; i++){	
+		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
+			
+			//If the stylesheet is not the "new" (gray) one, apply it
+			if(linkElements[i].href != pathToNewStylesheet){
+				switchToStylesheet(pathToNewStylesheet);
+			}else{
+				//If the old stylesheet hasn't been referenced before
+				//return, since we don't want to break the page's styling
+				//altogether
+				if(pathToOldStylesheet == ""){
+					return;
+				}
+				
+				//Switch to the old stylesheet
+				switchToStyleSheet(pathToOldStyleSheet);
+			}
+		}
+	}	
+}
+
 switchToStylesheet(pathToNewStylesheet);
+injectSwitcherIntoPage();
+
+
+
