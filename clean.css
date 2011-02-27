@@ -839,6 +839,7 @@ a.comment-user.owner {
   -webkit-border-radius: 3px;
   border-radius: 3px;  
   width: 700px;
+  margin: auto;
 }
 
 #system-message a {
