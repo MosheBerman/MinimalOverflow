@@ -114,12 +114,12 @@ function toggle(){
 			
 	//If the stylesheet is not the "new" (gray) one, apply it
 
-	if(localStorage['pathToStyleSheet'] == pathToNewStylesheet){
-		localStorage['pathToStyleSheet'] = pathToOldStylesheet;			
+	if(localStorage['pathToStylesheet'] == pathToNewStylesheet){
+		localStorage['pathToStylesheet'] = pathToOldStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "regular style";
 	}else{								
 		//Otherwise, switch (back) to the old stylesheet
-		localStorage['pathToStyleSheet'] = pathToNewStylesheet;			
+		localStorage['pathToStylesheet'] = pathToNewStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "minimalist style";				
 	}
 }
@@ -147,7 +147,7 @@ function storePathToOriginalStylesheet(){
 function main(){
 	storePathToOriginalStylesheet();
 	injectSwitcherIntoPage();
-	if(!localStorage['pathToStyleSheet']){
+	if(!localStorage['pathToStylesheet']){
 		toggle();
 	}
 	switchToStylesheet(localStorage['pathToStylesheet']);	
