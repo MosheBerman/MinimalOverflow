@@ -2283,11 +2283,12 @@ span.feed-icon {
 }
 #tag-menu {
   -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #1c1c1c;
   border-top: 1px solid #444444;
-  background-color: #333;
-  color: #e3e3e3;
+  background-color: #e3e3e3;
+  color: #333;
   text-align: left;
   font-size: 12px;
   padding: 10px;
@@ -2299,7 +2300,7 @@ span.feed-icon {
   z-index: 320;
 }
 #tag-menu .tm-heading {
-  color: #fff;
+  color: #000;
   font-weight: bold;
   border-bottom: 1px solid #727272;
   padding-bottom: 8px;
@@ -2317,18 +2318,19 @@ span.feed-icon {
   color: #b4d4ec;
 }
 #tag-menu .tm-favorite-on {
-  color: #fdca5c;
+  color: #545454;
+  text-shadow: 0 0 2px #666;
   font-size: 13px;
   text-decoration: none;
 }
 #tag-menu .tm-favorite-off {
-  color: #bbbbbb;
+  color: #444;
   font-size: 13px;
   text-decoration: none;
 }
 #tag-menu .tm-sub-links a, #tag-menu .tm-sub-links a:visited {
   font-weight: normal;
-  color: #ff9933;
+   
   text-decoration: none;
 }
 #tag-menu .tm-sub-links a:hover {
