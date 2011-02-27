@@ -138,12 +138,6 @@ function storePathToOriginalStylesheet(){
 }
 
 //
-//
-//
-
-function 
-
-//
 //	The entry point of the userscript.
 //	I called it main for lack of originality.
 //	It's not like C/Java programs start with main 
