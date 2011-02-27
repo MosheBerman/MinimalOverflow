@@ -948,10 +948,11 @@ a.comment-user.owner {
   float: left;
 }
 .subheader {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #aaa;
   height: 34px;
   clear: both;
   margin-bottom: 15px;
+  text-decoration: underline;
 }
 .subheader h1, .subheader h2 {
   float: left;
@@ -970,7 +971,7 @@ a.comment-user.owner {
 #tabs a {
   background: inherit;
   border: 1px solid #fff;
-  color: #777;
+  color: #aaa;
   display: block;
   float: left;
   font-size: 90%;
