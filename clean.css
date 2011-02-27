@@ -300,19 +300,21 @@ p code {
   z-index: 100;
   color: #735005;
 }
+
 #notify-container div {
-  background-color: #ccc;
+  background-color: #aaa;
   padding: 7px 0;
 }
 #notify-container a {
   text-decoration: underline;
-  color: #735005;
+  color: #000;
+  font-weight: bold;
 }
 #notify-container span.notify-close {
-  background-color: #FAD163;
+  background-color: #ccc;
   float: right;
   margin-right: 20px;
-  border: 2px solid #735005;
+  border: 2px solid #999;
   padding-left: 4px;
   padding-right: 4px;
   text-decoration: none;
