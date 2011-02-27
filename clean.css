@@ -809,7 +809,10 @@ a.comment-user.owner {
   width: 250px;
   float: left;
   margin-top: 20px;
+  text-align: center;
+  overflow: hidden;
 }
+
 #header #hmenus {
   width: 705px;
   float: left;
@@ -2061,7 +2064,7 @@ div.form-item-info {
 
 #hlogo a {
   font-size: 30px;
-  width: 300px;
+  width: 250px;
   height: 90px;
   display: block;
   float: left;
