@@ -854,7 +854,7 @@ a.comment-user.owner {
   margin: 0;
 }
 .nav li {
-  background: #777;
+  background: none;
   display: block;
   float: left;
   margin-right: 10px;
@@ -865,22 +865,22 @@ a.comment-user.owner {
 
 
 .nav .youarehere {
-  background: #ddd;
-  color: #333;
+  color: #3333;
+  
 }
 .youarehere a {
-  color: #fff;
+
 }
 .nav li:hover {
 	background-color: #ccc;
 }
 .nav a {
-  color: #fff;
+  color: #333;
   display: block;
   font-weight: bold;
   padding: 6px 12px 6px 12px;
   text-decoration: none;
-  background-color: #acacac !important;
+  background-color: none !important;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;  
