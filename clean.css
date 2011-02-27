@@ -851,7 +851,7 @@ a.comment-user.owner {
   font-size: 125%;
 }
 .nav ul {
-  margin: 10px 0;
+  margin: 0;
 }
 .nav li {
   background: none;
@@ -861,6 +861,7 @@ a.comment-user.owner {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  padding: 2px;
 }
 
 
@@ -872,7 +873,8 @@ a.comment-user.owner {
 
 }
 .nav li:hover {
-	border: #333 2px solid;
+	border: #777 2px solid;
+	padding: 0;
 }
 .nav a {
   color: #333;
@@ -887,7 +889,7 @@ a.comment-user.owner {
 }
 
 .nav a:hover{
-  background-color: #888;
+
 }
 
 .askquestion {
