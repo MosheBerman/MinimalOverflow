@@ -264,7 +264,10 @@ p code {
   margin-bottom: 6px;
 }
 .owner {
-  background-color: #e0eaf1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;	
+	border-radius: 5px;	
+	background-color: #a9a9a9;	
 }
 .deleted-answer {
   background-color: #e3d9d9;
