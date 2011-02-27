@@ -794,9 +794,10 @@ a.comment-user.owner {
 #header {
   width: 960px;
   height: 120px;
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
   padding-bottom: 15px !ie7;
 }
+
 #header #topbar {
   width: auto;
   padding: 3px 10px 0px 10px;
@@ -870,26 +871,23 @@ a.comment-user.owner {
 
 
 .nav .youarehere {
-  color: #333;
+  color: #555;
 	
 }
 
 .youarehere a {
-	text-decoration: underline !important;
+	text-decoration: overline !important;
 }
 .nav li:hover {
-	text-decoration: overline;
+	text-decoration: underline;
 }
 .nav a {
   color: #333;
   display: block;
   font-weight: bold;
-  padding: 12px;
+  padding: 10px;
   text-decoration: none;
   background-color: none !important;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;  
 }
 
 .nav a:hover{
@@ -955,6 +953,7 @@ a.comment-user.owner {
   float: right;
   font-weight: bold;
 }
+
 #tabs a {
   background: inherit;
   border: 1px solid #fff;
@@ -970,7 +969,7 @@ a.comment-user.owner {
 }
 #tabs a:hover {
   background: #fff;
-  border: 1px solid #777;
+  /*border: 1px solid #777;*/
   border-bottom-color: #fff;
   line-height: 20px;
   margin-top: 9px;
