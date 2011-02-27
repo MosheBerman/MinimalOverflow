@@ -952,13 +952,13 @@ a.comment-user.owner {
   height: 34px;
   clear: both;
   margin-bottom: 15px;
-  text-decoration: underline;
 }
 .subheader h1, .subheader h2 {
   float: left;
   font-size: 170%;
   line-height: 34px;
   margin-bottom: 0px;
+  text-decoration: underline;  
 }
 .subheader a {
   color: #000;
