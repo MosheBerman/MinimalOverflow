@@ -805,7 +805,7 @@ a.comment-user.owner {
   line-height: 22px;
 }
 #header #hlogo {
-  height: 200px;
+  height: 180px;
   width: 250px;
   float: left;
   margin-top: 20px;
@@ -817,7 +817,7 @@ a.comment-user.owner {
   width: 705px;
   float: left;
   padding: 10px 0px 20px 5px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #header #topbar #hlinks {
   float: left;
@@ -2066,10 +2066,9 @@ div.form-item-info {
   font-size: 26px;
   line-height: 1.5;
   width: 250px;
-  height: 200px;
+  height: 180px;
   display: block;
   float: left;
-  margin-top: 20px;
   text-align: center;
 }
 
