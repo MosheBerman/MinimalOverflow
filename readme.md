@@ -1,7 +1,7 @@
-This userscripts allows you to use StackOverflow with a clean B&W layout.Just install the userscript, the css file will update as I push changes.
+Latest version: 0.0.7.2
 
-You only need to upgrade the script if the hosting location of the CSS file changes.
+Description:
+-----------------
+This userscripts allows you to use StackOverflow with a clean B&W layout with any site on the StackExchange network.  
 
 Please report bugs in the bug tracker.
-
-Enjoy!
