@@ -3,8 +3,8 @@
 // @name	Stylesheet Switcher
 //
 // @namespace	http://mosheberman.com
-// @description   Loads a B&W theme into the StackExchange sites and a toggler
-// @version 0.0.6.6
+// @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
+// @version 0.0.6.7
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -32,6 +32,11 @@
 //
 // ==/UserScript==
 
+//
+//	Invoke the userscript:
+//
+
+main();
 
 /* ---------------------- (Global) Variables ----------------------- */
 
@@ -140,16 +145,10 @@ function storePathToOriginalStylesheet(){
 //	or anything like that. :P
 //
 
-fuction invokeSwitcher(){
+function main(){
 	injectSwitcherIntoPage();
 	storePathToOriginalStylesheet();
 	switchToStylesheet(pathToNewStylesheet);
 }
 
-
-//
-//	Invoke the userscript:
-//
-
-invokeSwitcher();
 
