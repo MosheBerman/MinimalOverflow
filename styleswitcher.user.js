@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.6.8
+// @version 0.0.7
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -32,12 +32,6 @@
 //
 // ==/UserScript==
 
-//
-//	Invoke the userscript:
-//
-
-main();
-
 /* ---------------------- (Global) Variables ----------------------- */
 
 //This URL will be loaded as the page's stylesheet "link" element
@@ -50,6 +44,10 @@ var pathToOldStylesheet = "";
 //store a reference to the link elements on the page - used
 //in multiple functions for 
 var linkElements = document.getElementsByTagName("link");
+
+/* --------------	Invoke the userscript: --------------- */
+
+main();
 
 /* --------------------- Functions --------------------- */
 
@@ -130,7 +128,6 @@ function storePathToOriginalStylesheet(){
 			return;
 		}
 	}
-	
 }
 
 
