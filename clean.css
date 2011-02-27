@@ -808,8 +808,7 @@ a.comment-user.owner {
   height: 100px;
   width: 250px;
   float: left;
-  margin-top: 20px;
-  overflow: hidden;
+  margin-top: 12px;
 }
 
 #hlogo{
@@ -819,8 +818,8 @@ a.comment-user.owner {
 #header #hmenus {
   width: 705px;
   float: left;
-  padding: 10px 0px 20px 5px;
-  margin-top: 20px;
+  padding: 10px 0px 10px 5px;
+  margin-top: 12px;
 }
 #header #topbar #hlinks {
   float: left;
