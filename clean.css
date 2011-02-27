@@ -811,8 +811,8 @@ a.comment-user.owner {
 #header #hmenus {
   width: 705px;
   float: left;
-  padding: 34px 0px 20px 5px;
-  margin-top: 10px;
+  padding: 10px 0px 20px 5px;
+  margin-top: 0px;
 }
 #header #topbar #hlinks {
   float: left;
@@ -2047,12 +2047,14 @@ div.form-item-info {
   overflow: hidden;
   white-space: nowrap;
 }
-#hlogo a, .envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off, .comment-up-off, .comment-up-on, .flag-off, .flag-on, .edited-yes, a.cc-wiki-link, .feed-icon, .statsarrow, .vote-accepted-off, .vote-accepted-on, .vote-accepted-bounty, .badge-earned-check, .delete-tag, .delete-tag-hover, .grippie, .expander-arrow-hide, .expander-arrow-show, .expander-arrow-small-hide, .expander-arrow-small-show, .anonymous-gravatar, .badge1, .badge2, .badge3, .add-interesting-tag-on, .add-interesting-tag-off {
-
+.envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off, .comment-up-off, .comment-up-on, .flag-off, .flag-on, .edited-yes, a.cc-wiki-link, .feed-icon, .statsarrow, .vote-accepted-off, .vote-accepted-on, .vote-accepted-bounty, .badge-earned-check, .delete-tag, .delete-tag-hover, .grippie, .expander-arrow-hide, .expander-arrow-show, .expander-arrow-small-hide, .expander-arrow-small-show, .anonymous-gravatar, .badge1, .badge2, .badge3, .add-interesting-tag-on, .add-interesting-tag-off {
+  background-image: url(http://sstatic.net/stackoverflow/img/sprites.png?v=2);
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
 #hlogo a {
+  font-size: 30px;
   width: 250px;
   height: 61px;
   display: block;
