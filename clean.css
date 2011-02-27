@@ -979,17 +979,23 @@ a.comment-user.owner {
   margin: 8px 8px 0 0;
   padding: 0 11px 0 11px;
   text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;  
+  border-radius: 5px;  
 }
 #tabs a:hover {
   background: #fff;
-  /*border: 1px solid #777;*/
+  border: 1px solid #aaa;
   border-bottom-color: #fff;
   line-height: 20px;
   margin-top: 9px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;  
+  border-radius: 5px;  
 }
 #tabs a.youarehere {
   background: #fff;
-  border: 1px solid #777;
+  border: 1px solid #aaa;
   border-bottom-color: #fff;
   color: black;
   font-size: 120%;
@@ -997,6 +1003,9 @@ a.comment-user.owner {
   line-height: 28px;
   margin-top: 3px;
   padding: 0px 11px 0px 11px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;  
+  border-radius: 5px;    
 }
 .subtabs {
   width: 100%;
