@@ -861,7 +861,7 @@ a.comment-user.owner {
 }
 
 .nav li:first-child{
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
 }
 
 .nav .youarehere {
