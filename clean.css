@@ -221,6 +221,7 @@ p code {
   height: 25px;
   font-size: 190%;
   font-weight: bold;
+  padding: 5px;
 }
 .vt {
   vertical-align: top;
@@ -1101,14 +1102,14 @@ a.comment-user.owner {
   color: #999 !important;
 }
 .warm {
-  color: #9b764f !important;
+  color: #888 !important;
 }
 .hot {
-  color: #cf7721 !important;
+  color: #676767 !important;
 }
 .hotbg {
   color: #fff !important;
-  background-color: #cf7721 !important;
+  background-color: #555 !important;
 }
 .supernova {
   color: #ccc !important;
@@ -1116,7 +1117,7 @@ a.comment-user.owner {
 }
 .supernovabg {
   color: #fff !important;
-  background-color: #fe7a15 !important;
+  background-color: #222 !important;
 }
 .narrow .views {
   float: left;
