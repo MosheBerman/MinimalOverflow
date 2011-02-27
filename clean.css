@@ -1060,7 +1060,8 @@ a.comment-user.owner {
   background-color: #cf7721 !important;
 }
 .supernova {
-  color: #fe7a15 !important;
+  color: #ccc !important;
+  text-decoration: underline;
 }
 .supernovabg {
   color: #fff !important;
@@ -1530,9 +1531,10 @@ div.form-item-info {
 }
 
 .post-tag:hover, .post-text .post-tag:hover, #wmd-preview a.post-tag:hover {
-  color: #6e6e6e;
+  color: #7d7d7d;
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid #7d7d7d;
+  background-color: #fff;
   padding: 3px;
 }
 
