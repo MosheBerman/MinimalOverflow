@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Load a stylesheet into a website
-// @version 0.0.5.5
+// @version 0.0.5.6
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -80,7 +80,7 @@ function injectSwitcherIntoPage(){
 	
 	//Set up the toggler
 	themeSwitcher.innerText = "Toggle Theme";
-	themeSwitcher.onclick = toggle();
+	themeSwitcher.onclick = toggle;
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 }
 
@@ -102,7 +102,7 @@ function toggle(){
 				}
 				
 				//Switch (back) to the old stylesheet
-				switchToStyleSheet(pathToOldStyleSheet);
+				switchToStyleSheet(pathToOldStylesheet);
 			}
 		}
 	}	
