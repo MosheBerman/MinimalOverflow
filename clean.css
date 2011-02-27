@@ -33,9 +33,6 @@ body {
   background: #FFF;
   color: #000;
   font-family: "AxelBold", "Lucida Grande", "Verdana", Arial, Liberation Sans, DejaVu Sans, sans-serif;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1.8;
   text-align: center;
 }
 code {
@@ -2964,6 +2961,10 @@ table.full-diff td {
 
 .share-tip{
 	border: 2px solid #333;
+	padding: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 }
 
 .comment-help {
