@@ -298,35 +298,30 @@ p code {
   width: 100%;
   height: 0;
   z-index: 100;
-  color: #fff;
+  color: #735005;
 }
 #notify-container div {
-  background-color: #999;
+  background-color: #ccc;
   padding: 7px 0;
-  
 }
 #notify-container a {
   text-decoration: underline;
-  color: #ddd;
+  color: #735005;
 }
-
 #notify-container span.notify-close {
-  background-color: #eee;
-  color: #333
+  background-color: #FAD163;
   float: right;
   margin-right: 20px;
-  border: 2px solid #333;
+  border: 2px solid #735005;
   padding-left: 4px;
   padding-right: 4px;
   text-decoration: none;
   display: block;
   cursor: pointer;
 }
-
 #notify-container span.notify-close a {
   text-decoration: none;
 }
-
 .summaryinfo {
   color: #808185;
   text-align: center;
