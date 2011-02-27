@@ -859,10 +859,7 @@ a.comment-user.owner {
   background: none;
   display: block;
   float: left;
-  margin: 0 3px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  margin: 10px 2px;
 }
 
 
@@ -881,7 +878,7 @@ a.comment-user.owner {
   color: #333;
   display: block;
   font-weight: bold;
-  padding: 6px 12px 6px 12px;
+  padding: 12px;
   text-decoration: none;
   background-color: none !important;
   -moz-border-radius: 5px;
@@ -900,6 +897,7 @@ a.comment-user.owner {
 #nav-askquestion {
   margin-right: 0px;
 }
+
 #sidebar {
   overflow: hidden;
   float: right;
@@ -2040,11 +2038,13 @@ div.form-item-info {
   color: #eee;
   background-color: #888;
 }
+
 @media print {
   #sidebar, #nav, #tabs, #footer, #hmenus, #hlinks, .post-menu, .post-comments, .notify, form, div.vote {
-  display: none;
+    display: none;
+  }
 }
-}
+
 #recent-badges td {
   vertical-align: baseline;
   height: 32px;
