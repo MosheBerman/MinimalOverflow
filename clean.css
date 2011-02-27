@@ -1539,11 +1539,11 @@ div.form-item-info {
   /*background-color: #7d7d7d;*/
   font-size: 90%;
   font-weight: bold;
-  margin: 8px 1px;
+  margin: 4px 1px 8px 0px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding: 4px;
+  padding: 3px;
   text-decoration: none;
   font-size: 90%;
   line-height: 2.0;
@@ -1555,7 +1555,7 @@ div.form-item-info {
   text-decoration: none;
   border: 1px solid #7d7d7d;
   background-color: #fff;
-  padding: 3px;
+  padding: 2px;
 }
 
 #interestingTags .post-tag{	
