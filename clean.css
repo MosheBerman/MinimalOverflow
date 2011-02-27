@@ -793,7 +793,7 @@ a.comment-user.owner {
 }
 #header {
   width: 960px;
-  height: 170px;
+  height: 17	0px;
   margin: 0 auto;
   padding-bottom: 15px !ie7;
 }
@@ -2967,7 +2967,13 @@ table.full-diff td {
   display: inline-block !important;
   margin: 0;
   vertical-align: middle;
+  
 }
+
+.fb-share .twitter-share{
+	margin: 5px !important;
+}
+
 .share-answer a {
   margin-right: 5px;
 }
