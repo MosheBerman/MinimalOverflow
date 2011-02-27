@@ -833,7 +833,11 @@ a.comment-user.owner {
   margin: 0px 0px 10px 0px;
   padding: 7px;
   font-weight: bold;
-  color: #3f3f3f;
+  background-color: #3f3f3f;
+  color: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;  
 }
 #system-message a {
   color: #555;
