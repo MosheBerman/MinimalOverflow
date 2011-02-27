@@ -809,8 +809,11 @@ a.comment-user.owner {
   width: 250px;
   float: left;
   margin-top: 20px;
-  text-align: center;
   overflow: hidden;
+}
+
+#hlogo{
+	text-align: center;
 }
 
 #header #hmenus {
@@ -2070,7 +2073,6 @@ div.form-item-info {
   display: block;
   float: left;
   margin-top: 20px;
-  text-align: center;
 }
 
 .envelope-off, .envelope-on {
