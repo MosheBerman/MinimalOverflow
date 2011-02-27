@@ -36,11 +36,7 @@
 //	Potential DOM conflict:
 //	This script uses the id "id_toggler_link" for the toggle link.
 //
-//
-//
-//
-//	TODO: Add persistence cookie
-//	
+
 
 /* ---------------------- (Global) Variables ----------------------- */
 
@@ -116,11 +112,11 @@ function toggle(){
 
 	if(localStorage['pathToStylesheet'] == pathToNewStylesheet){
 		localStorage['pathToStylesheet'] = pathToOldStylesheet;			
-		document.getElementById("id_toggler_link").innerText = "clean CSS";
+		document.getElementById("id_toggler_link").innerText = "clean css";
 	}else{								
 		//Otherwise, switch (back) to the old stylesheet
 		localStorage['pathToStylesheet'] = pathToNewStylesheet;			
-		document.getElementById("id_toggler_link").innerText = "all CSS";				
+		document.getElementById("id_toggler_link").innerText = "all css";				
 	}
 }
 
