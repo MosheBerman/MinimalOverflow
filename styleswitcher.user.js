@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.6.7
+// @version 0.0.6.8
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -100,21 +100,17 @@ function injectSwitcherIntoPage(){
 function toggle(){
 	
 	//Find the stylesheet "link" element
+	
 	for(var i=0; i<linkElements.length; i++){	
-		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
+		if(linkElements[i].getAttribute("rel") == "stylesheet"){
 			
 			//If the stylesheet is not the "new" (gray) one, apply it
-			if(linkElements[i].href != pathToNewStylesheet){
+	
+			if(linkElements[i].href == pathToOldStylesheet){
 				switchToStylesheet(pathToNewStylesheet);
 			}else{
-				//If the old stylesheet hasn't been referenced before
-				//return, since we don't want to break the page's styling
-				//altogether.
-				if(pathToOldStylesheet == ""){
-					return;
-				}
-				
-				//Switch (back) to the old stylesheet
+									
+				//Otherwise, switch (back) to the old stylesheet
 				switchToStylesheet(pathToOldStylesheet);
 				return;
 			}
@@ -129,8 +125,8 @@ function toggle(){
 function storePathToOriginalStylesheet(){
 
 	for(var i=0; i<linkElements.length; i++){	
-		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
-			pathToOldStylesheet = linkElements[i].href.toString();
+		if(linkElements[i].getAttribute("rel") == "stylesheet"){
+			pathToOldStylesheet = linkElements[i].href;
 			return;
 		}
 	}
