@@ -2315,7 +2315,7 @@ span.feed-icon {
   margin-bottom: 8px;
 }
 #tag-menu .tm-description a, #tag-menu .tm-description a:visited {
-  color: #b4d4ec;
+  color: #454545;
 }
 #tag-menu .tm-favorite-on {
   color: #545454;
@@ -2330,23 +2330,23 @@ span.feed-icon {
 }
 #tag-menu .tm-sub-links a, #tag-menu .tm-sub-links a:visited {
   font-weight: normal;
-   
+  color: #565656;
   text-decoration: none;
 }
 #tag-menu .tm-sub-links a:hover {
-  color: #faaf65;
+  color: #242424;
 }
 #tag-menu .tm-links {
   color: #727272;
 }
 #tag-menu .tm-links a, #tag-menu .tm-links a:visited {
-  color: #b4d4ec;
+  color: #565656;
   font-size: 11px;
   text-decoration: none;
   margin-right: 8px;
 }
 #tag-menu .tm-links a:hover {
-  color: #dcecf7;
+  color: #242424;
 }
 #portalLink {
   margin-left: -6px;
