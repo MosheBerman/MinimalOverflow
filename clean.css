@@ -765,11 +765,13 @@ a.comment-user.owner {
   width: 100%;
   zoom: 1;
 }
+
 #custom-header {
   background-color: #eee;
   height: 31px;
   margin-bottom: -31px;
 }
+
 #content {
   clear: both;
   margin: 0 auto;
@@ -795,7 +797,7 @@ a.comment-user.owner {
 #header {
   width: 960px;
   height: 120px;
-  margin: 0 auto 5px auto;
+  margin: 10px auto 5px auto;
   padding-bottom: 15px !ie7;
 }
 
@@ -811,16 +813,17 @@ a.comment-user.owner {
   width: 250px;
   float: left;
   margin-top: 10px;
+  
 }
 
 #hlogo{
-	text-align: center;
+
 }
 
 #header #hmenus {
   width: 705px;
   float: left;
-  padding: 0px 0px 10px 5px;
+  padding: 20px 0px 10px 5px;
   margin-top: 10px;
 }
 #header #topbar #hlinks {
