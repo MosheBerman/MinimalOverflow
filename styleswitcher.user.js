@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Load a stylesheet into a website
-// @version 0.0.5.4
+// @version 0.0.5.5
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -32,20 +32,26 @@
 //
 // ==/UserScript==
 
-//This URL will be loaded as the page's stylesheet and this overrides any other stylesheets as of now
-//var pathToStylesheet = "http://mosheberman.com/clean.css";
+/* ---------------------- (Global) Variables ----------------------- */
+
+//This URL will be loaded as the page's stylesheet "link" element
 var pathToNewStylesheet = "https://github.com/MosheBerman/MinimalOverflow/raw/master/clean.css"
 
+//A variable to store a reference to the original stylesheet, used 
+//for the toggler, in case the user wants to revert to the original
 var pathToOldStylesheet = "";
 
-//
-//	TODO: Build Switcher UI 
+//store a reference to the link elements on the page - used
+//in multiple functions for 
+var linkElements = document.getElementsByTagName("link");
+
+/* --------------------- Functions --------------------- */
+
+//	
+//	The core function that switches the stylesheet
 //
 
 function switchToStylesheet(sheet){
-
-	//store a reference to the link elements on the page
-	var linkElements = document.getElementsByTagName("link");
 
 	for(var i=0; i<linkElements.length; i++){	
 		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
@@ -80,7 +86,7 @@ function injectSwitcherIntoPage(){
 
 function toggle(){
 	
-	//Find the "stylesheet" <link /> element
+	//Find the stylesheet "link" element
 	for(var i=0; i<linkElements.length; i++){	
 		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
 			
@@ -95,7 +101,7 @@ function toggle(){
 					return;
 				}
 				
-				//Switch to the old stylesheet
+				//Switch (back) to the old stylesheet
 				switchToStyleSheet(pathToOldStyleSheet);
 			}
 		}
