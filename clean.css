@@ -885,11 +885,10 @@ a.comment-user.owner {
   margin-right: 0px;
 }
 #sidebar {
-  display: none;
   overflow: hidden;
   float: right;
   margin-bottom: 60px;
-  width: 220px;
+  width: 210px;
 }
 #mainbar {
   float: left;
