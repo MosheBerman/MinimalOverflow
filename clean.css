@@ -1131,7 +1131,7 @@ a.comment-user.owner {
 }
 .unanswered {
   background: #fff;
-  color: #444;
+  color: #444 !important;
 }
 .summary {
   float: left;
@@ -2959,6 +2959,11 @@ table.full-diff td {
 .share-answer a:hover .share-name {
   text-decoration: underline;
 }
+
+.share-tip{
+	border: 2px solid #333;
+}
+
 .comment-help {
   background-color: #FEFAE2;
   border: 1px solid #F3EED5;
