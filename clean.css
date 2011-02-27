@@ -906,6 +906,11 @@ a.comment-user.owner {
   margin-bottom: 60px;
   width: 220px;
 }
+
+#sidebar .ac_input{
+	width: 150px;
+}
+
 #mainbar {
   float: left;
   margin-bottom: 40px;
@@ -1127,7 +1132,7 @@ a.comment-user.owner {
 	border: 1px #222 solid;
 }
 .answered-accepted strong {
-  color: #222;
+  color: #000;
 }
 .unanswered {
   background: #fff;
