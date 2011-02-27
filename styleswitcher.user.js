@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and a toggler
-// @version 0.0.6
+// @version 0.0.6.1
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -59,7 +59,7 @@ function switchToStylesheet(sheet){
 			//If the path to the old stylesheet hasn't been set,	
 			//store it for use later
 			if(pathToOldStylesheet == ""){
-				pathToOldStylesheet = linkElements[i].href;
+				pathToOldStylesheet = linkElements[i].href.toString();
 			}
 		
 			//apply the new stylesheet
@@ -101,6 +101,7 @@ function toggle(){
 			//If the stylesheet is not the "new" (gray) one, apply it
 			if(linkElements[i].href != pathToNewStylesheet){
 				switchToStylesheet(pathToNewStylesheet);
+				
 			}else{
 				//If the old stylesheet hasn't been referenced before
 				//return, since we don't want to break the page's styling
