@@ -856,7 +856,8 @@ a.comment-user.owner {
   margin-right: 7px;
 }
 .nav .youarehere {
-  background: #f90;
+  background: #ddd;
+  color: #333;
 }
 .youarehere a {
   color: #fff;
@@ -1093,9 +1094,8 @@ a.comment-user.owner {
   font-size: 140%;
 }
 .answered {
-  background: #fff;
+  background: #aaa;
   color: #000;
-  border: 1px solid #000;
 }
 .answered-accepted {
 	color: #fff;
@@ -1532,7 +1532,7 @@ div.form-item-info {
 .post-tag:hover, .post-text .post-tag:hover, #wmd-preview a.post-tag:hover {
   color: #6e6e6e;
   text-decoration: none;
-  border: 1px solid #848484;
+  border: 1px solid #000;
   padding: 3px;
 }
 
