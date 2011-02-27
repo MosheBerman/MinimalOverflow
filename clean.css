@@ -900,6 +900,7 @@ a.comment-user.owner {
 
 .askquestion {
   float: right;
+  margin-right:10px;
 }
 
 #nav-askquestion {
