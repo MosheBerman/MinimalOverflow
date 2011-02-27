@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Load a stylesheet into a website
-// @version 0.0.5.2
+// @version 0.0.5.3
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -42,7 +42,7 @@ var pathToOldStylesheet = "";
 //	TODO: Build Switcher UI 
 //
 
-function switchToStyleSheet(sheet){
+function switchToStylesheet(sheet){
 
 	//store a reference to the link elements on the page
 	var linkElements = document.getElementsByTagName("link");
