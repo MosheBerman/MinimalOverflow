@@ -1112,7 +1112,7 @@ a.comment-user.owner {
   height: 38px;
 }
 .status strong {
-  color: #fff;
+  color: #333;
   display: block;
   font-size: 140%;
 }
@@ -1127,7 +1127,7 @@ a.comment-user.owner {
 	border: 1px #222 solid;
 }
 .answered-accepted strong {
-  color: #E1E1E1;
+  color: #222;
 }
 .unanswered {
   background: #fff;
