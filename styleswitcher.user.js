@@ -94,7 +94,7 @@ function injectSwitcherIntoPage(){
 	//Set up the toggler
 	themeSwitcher.innerText = "minimalist style";
 	themeSwitcher.id = "id_toggler_link";
-	themeSwitcher.onclick = toggle;
+	themeSwitcher.onclick = function(){toggle(); switchToStyleSheet(localStorage['pathToStylesheet']);};
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
@@ -107,26 +107,17 @@ function injectSwitcherIntoPage(){
 //
 
 function toggle(){
-	
-	//Find the stylesheet "link" element
-	
-	for(var i=0; i<linkElements.length; i++){	
-		if(linkElements[i].getAttribute("rel") == "stylesheet"){
 			
-			//If the stylesheet is not the "new" (gray) one, apply it
-	
-			if(linkElements[i].href == pathToOldStylesheet){
-				switchToStylesheet(pathToNewStylesheet);
-				document.getElementById("id_toggler_link").innerText = "regular style";
-			}else{
-									
-				//Otherwise, switch (back) to the old stylesheet
-				switchToStylesheet(pathToOldStylesheet);
-				document.getElementById("id_toggler_link").innerText = "minimalist style";				
-				return;
-			}
-		}
-	}	
+	//If the stylesheet is not the "new" (gray) one, apply it
+
+	if(localStorage['pathToStyleSheet'] == pathToNewStylesheet){
+		localStorage['pathToStyleSheet'] = pathToOldStylesheet;			
+		document.getElementById("id_toggler_link").innerText = "regular style";
+	}else{								
+		//Otherwise, switch (back) to the old stylesheet
+		localStorage['pathToStyleSheet'] = pathToNewStylesheet;			
+		document.getElementById("id_toggler_link").innerText = "minimalist style";				
+	}
 }
 
 //
@@ -142,6 +133,11 @@ function storePathToOriginalStylesheet(){
 	}
 }
 
+//
+//
+//
+
+function 
 
 //
 //	The entry point of the userscript.
@@ -151,9 +147,14 @@ function storePathToOriginalStylesheet(){
 //
 
 function main(){
-	injectSwitcherIntoPage();
 	storePathToOriginalStylesheet();
-	toggle();
+	injectSwitcherIntoPage();
+	if(!localStorage['pathToStyleSheet']){
+		toggle();
+	}
+	switchToStyleSheet(localStorage['pathToStylesheet']);
 }
+
+
 
 
