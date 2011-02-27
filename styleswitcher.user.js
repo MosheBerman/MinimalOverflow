@@ -3,8 +3,8 @@
 // @name	Stylesheet Switcher
 //
 // @namespace	http://mosheberman.com
-// @description   Load a stylesheet into a website
-// @version 0.0.5.6
+// @description   Loads a B&W theme into the StackExchange sites and a toggler
+// @version 0.0.5.8
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -77,10 +77,18 @@ function injectSwitcherIntoPage(){
 
 	//create the switcher link
 	var themeSwitcher = document.createElement("a");
+	var themeSwitcherDivider = document.createElement("span");
+	
+	//set up the divider
+	themeSwitcherDivider.class = "lsep";
+	themeSwitcherDivider.innerText = "|";
 	
 	//Set up the toggler
-	themeSwitcher.innerText = "Toggle Theme";
+	themeSwitcher.innerText = "toggle theme";
 	themeSwitcher.onclick = toggle;
+	
+	//Add the divider and the toggler
+		document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 }
 
@@ -102,7 +110,7 @@ function toggle(){
 				}
 				
 				//Switch (back) to the old stylesheet
-				switchToStyleSheet(pathToOldStylesheet);
+				switchToStylesheet(pathToOldStylesheet);
 			}
 		}
 	}	
