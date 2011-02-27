@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.8.2
+// @version 0.0.8.7
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -26,7 +26,6 @@
 // @exclude      http://chat.*.stackexchange.com/*
 // @exclude      http://api.*.stackexchange.com/*
 // @exclude      http://data.stackexchange.com/*
-// @exclude      http://*/reputation
 //
 // @author Moshe Berman
 //
@@ -154,7 +153,7 @@ function main(){
 	}
 	
 	//Clean up the Stack Exchange logo as necessary
-	//removeStackExchangeFromLogo();
+	removeStackExchangeFromLogo();
 		
 	//switch to the selected stylesheet
 	switchToStylesheet(localStorage['pathToStylesheet']);
@@ -174,9 +173,17 @@ function toggleAndApplyStylesheet(){
 //
 
 function removeStackExchangeFromLogo(){
+
+	document.getElementById("hlogo").innerHTML = "" + document.getElementById("hlogo").innerHTML.replace("- Stack Exchange"," ");	
 	
-	var title = document.getElementById("hlogo").innerHTML;
-	title.replace(" - Stack Exchange", "");
-	document.getElementById("hlogo").innerHTML = title;
 	
+}
+
+//
+//	A debugging function
+//
+
+
+function _alert(string){
+	alert(string);
 }
