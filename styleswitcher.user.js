@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Load a stylesheet into a website
-// @version 0.0.5
+// @version 0.0.5.1
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -33,8 +33,8 @@
 // ==/UserScript==
 
 //This URL will be loaded as the page's stylesheet and this overrides any other stylesheets as of now
-var pathToStylesheet = "https://github.com/MosheBerman/MinimalOverflow/blob/master/clean.css";
-
+//var pathToStylesheet = "http://mosheberman.com/clean.css";
+var pathToStylesheet = "https://github.com/MosheBerman/MinimalOverflow/raw/master/clean.css"
 //
 //	TODO: Build Switcher UI 
 //
