@@ -858,6 +858,7 @@ a.comment-user.owner {
   display: block;
   float: left;
   margin-right: 7px;
+	
 }
 .nav .youarehere {
   background: #ddd;
@@ -867,7 +868,7 @@ a.comment-user.owner {
   color: #fff;
 }
 .nav li:hover {
-  background-color: #acacac;
+  background-color: #888;
 }
 .nav a {
   color: #fff;
@@ -888,7 +889,7 @@ a.comment-user.owner {
   overflow: hidden;
   float: right;
   margin-bottom: 60px;
-  width: 210px;
+  width: 220px;
 }
 #mainbar {
   float: left;
