@@ -867,7 +867,7 @@ a.comment-user.owner {
   color: #fff;
 }
 .nav li:hover {
-  background-color: #f90;
+  background-color: #acacac;
 }
 .nav a {
   color: #fff;
@@ -875,6 +875,7 @@ a.comment-user.owner {
   font-weight: bold;
   padding: 6px 12px 6px 12px;
   text-decoration: none;
+  background-color: #acacac !important;
 }
 .askquestion {
   float: right;
@@ -1919,7 +1920,7 @@ div.form-item-info {
   margin-left: 5px;
   margin-right: 5px;
   position: absolute;
-  background-image: url("http://sstatic.net/Img/wmd-buttons.png");
+  background-image: url(http://www.sstatic.net/stackoverflow/Img/wmd-buttons.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
   display: inline-block;
