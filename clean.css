@@ -857,9 +857,13 @@ a.comment-user.owner {
   background: #777;
   display: block;
   float: left;
-  margin-right: 7px;
-	
+  margin-right: 0px;
 }
+
+.nav li:first-child{
+  border-radius: 5px 0 0 5px;
+}
+
 .nav .youarehere {
   background: #ddd;
   color: #333;
