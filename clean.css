@@ -2048,7 +2048,7 @@ div.form-item-info {
   white-space: nowrap;
 }
 #hlogo a, .envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off, .comment-up-off, .comment-up-on, .flag-off, .flag-on, .edited-yes, a.cc-wiki-link, .feed-icon, .statsarrow, .vote-accepted-off, .vote-accepted-on, .vote-accepted-bounty, .badge-earned-check, .delete-tag, .delete-tag-hover, .grippie, .expander-arrow-hide, .expander-arrow-show, .expander-arrow-small-hide, .expander-arrow-small-show, .anonymous-gravatar, .badge1, .badge2, .badge3, .add-interesting-tag-on, .add-interesting-tag-off {
-  background-image: url(http://sstatic.net/stackoverflow/img/sprites.png?v=2);
+
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -2057,7 +2057,6 @@ div.form-item-info {
   height: 61px;
   display: block;
   background-position: 0px 0px;
-  text-indent: -999999em;
   float: left;
 }
 .envelope-off, .envelope-on {
