@@ -33,7 +33,9 @@ body {
   background: #FFF;
   color: #000;
   font-family: "AxelBold", "Lucida Grande", "Verdana", Arial, Liberation Sans, DejaVu Sans, sans-serif;
-  font-size: 70%;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1.8;
   text-align: center;
 }
 code {
