@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.7.8
+// @version 0.0.8.0
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -141,12 +141,23 @@ function storePathToOriginalStylesheet(){
 //
 
 function main(){
+
+	//store the path to the original stylesheet
 	storePathToOriginalStylesheet();
+	
+	//add a switcher to the menu
 	injectSwitcherIntoPage();
+	
+	//configure persistence if it hasn't been set up yet
 	if(!localStorage['pathToStylesheet']){
 		toggle();
 	}
-	switchToStylesheet(localStorage['pathToStylesheet']);	
+	
+	//Clean up the Stack Exchange logo as necessary
+	removeStackExchangeFromLogo();
+		
+	//switch to the selected stylesheet
+	switchToStylesheet(localStorage['pathToStylesheet']);
 }
 
 //
@@ -158,4 +169,14 @@ function toggleAndApplyStylesheet(){
 	switchToStylesheet(localStorage['pathToStylesheet']);
 }
 
+//
+//	Remove the " - Stack Exchange" text from the logo alt text
+//
 
+function removeStackExchangeFromLogo(){
+	
+	var title = document.getElementById("hlogo").innerText;
+	title.replace(" - Stack Exchange", "");
+	document.getElementById("hlogo").innerText = title;
+	
+}
