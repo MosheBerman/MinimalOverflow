@@ -1514,7 +1514,7 @@ div.form-item-info {
   margin-top: 10px;
 }
 .post-tag, .post-text .post-tag, #wmd-preview a.post-tag {
-  color: #fff !important;
+  color: #fff;
   background-color: #7d7d7d;
   font-size: 90%;
   font-weight: bold;
@@ -1531,7 +1531,7 @@ div.form-item-info {
 }
 
 .post-tag:hover, .post-text .post-tag:hover, #wmd-preview a.post-tag:hover {
-  color: #7d7d7d;
+  color: #7d7d7d !important;
   text-decoration: none;
   border: 1px solid #7d7d7d;
   background-color: #fff;
