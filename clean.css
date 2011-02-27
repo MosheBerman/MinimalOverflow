@@ -858,7 +858,9 @@ a.comment-user.owner {
   display: block;
   float: left;
   margin-right: 10px;
-
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 
@@ -870,7 +872,7 @@ a.comment-user.owner {
   color: #fff;
 }
 .nav li:hover {
-  background-color: #888;
+	background-color: #ccc;
 }
 .nav a {
   color: #fff;
@@ -883,6 +885,11 @@ a.comment-user.owner {
   -webkit-border-radius: 5px;
   border-radius: 5px;  
 }
+
+.nav a:hover{
+  background-color: #888;
+}
+
 .askquestion {
   float: right;
 }
