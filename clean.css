@@ -1514,7 +1514,7 @@ div.form-item-info {
   margin-top: 10px;
 }
 .post-tag, .post-text .post-tag, #wmd-preview a.post-tag {
-  color: #fff;
+  color: #fff !important;
   background-color: #7d7d7d;
   font-size: 90%;
   font-weight: bold;
