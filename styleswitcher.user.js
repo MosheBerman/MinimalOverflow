@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.8.0
+// @version 0.0.8.1
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -175,8 +175,8 @@ function toggleAndApplyStylesheet(){
 
 function removeStackExchangeFromLogo(){
 	
-	var title = document.getElementById("hlogo").innerText;
+	var title = document.getElementById("hlogo").innerHTML;
 	title.replace(" - Stack Exchange", "");
-	document.getElementById("hlogo").innerText = title;
+	document.getElementById("hlogo").innerHTML = title;
 	
 }
