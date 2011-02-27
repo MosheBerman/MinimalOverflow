@@ -918,6 +918,11 @@ a.comment-user.owner {
 	width: 150px;
 }
 
+#promo-icon-wrapper a{
+	line-height: 1.5;
+	padding: 5px;
+}
+
 #mainbar {
   float: left;
   margin-bottom: 40px;
@@ -1035,6 +1040,7 @@ a.comment-user.owner {
   padding: 4px 7px 6px 7px;
   width: 58px;
 }
+
 .statscontainer {
   width: 86px;
   float: left;
