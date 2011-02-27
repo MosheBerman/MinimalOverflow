@@ -1117,14 +1117,14 @@ a.comment-user.owner {
   font-size: 140%;
 }
 .answered {
-  background: #aaa;
+  background: #ccc;
   color: #000;
 }
 .answered-accepted {
-	color: #000;
-	background: #aaa;
+	color: #222;
+	background: #ccc;
 	margin: 1px;
-	border: 1px #000 solid;
+	border: 1px #222 solid;
 }
 .answered-accepted strong {
   color: #E1E1E1;
