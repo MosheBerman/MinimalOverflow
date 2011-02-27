@@ -771,6 +771,7 @@ a.comment-user.owner {
   margin-bottom: -31px;
 }
 #content {
+  clear: both;
   margin: 0 auto;
   width: 960px;
   min-height: 450px;
