@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and a toggler
-// @version 0.0.6.5
+// @version 0.0.6.4
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -31,13 +31,6 @@
 // @author Moshe Berman
 //
 // ==/UserScript==
-
-
-//
-//	Invoke the userscript:
-//
-
-main();
 
 
 /* ---------------------- (Global) Variables ----------------------- */
@@ -147,10 +140,16 @@ function storePathToOriginalStylesheet(){
 //	or anything like that. :P
 //
 
-fuction main(){
+fuction invokeSwitcher(){
 	injectSwitcherIntoPage();
 	storePathToOriginalStylesheet();
 	switchToStylesheet(pathToNewStylesheet);
 }
 
+
+//
+//	Invoke the userscript:
+//
+
+invokeSwitcher();
 
