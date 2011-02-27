@@ -805,7 +805,7 @@ a.comment-user.owner {
   line-height: 22px;
 }
 #header #hlogo {
-  height: 180px;
+  height: 100px;
   width: 250px;
   float: left;
   margin-top: 20px;
@@ -2066,7 +2066,7 @@ div.form-item-info {
   font-size: 26px;
   line-height: 1.5;
   width: 250px;
-  height: 180px;
+  height: 100px;
   display: block;
   float: left;
   margin-top: 20px;
