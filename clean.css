@@ -2970,6 +2970,11 @@ table.full-diff td {
 	box-shadow: 0 0 3px #888;
 }
 
+.share-tip a{
+	float: none !important;
+	margin-top: -10px;
+}
+
 .comment-help {
   background-color: #FEFAE2;
   border: 1px solid #F3EED5;
