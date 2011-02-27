@@ -85,12 +85,17 @@ function injectSwitcherIntoPage(){
 	
 	//Set up the toggler
 	themeSwitcher.innerText = "toggle theme";
-	themeSwitcher.onClick = function(){toggle();};
+	themeSwitcher.onClick = function(){alert("false :P");};
 	
 	//Add the divider and the toggler
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 }
+
+
+//
+//	Toggle the stylesheet
+//
 
 function toggle(){
 	
@@ -101,11 +106,10 @@ function toggle(){
 			//If the stylesheet is not the "new" (gray) one, apply it
 			if(linkElements[i].href != pathToNewStylesheet){
 				switchToStylesheet(pathToNewStylesheet);
-				
 			}else{
 				//If the old stylesheet hasn't been referenced before
 				//return, since we don't want to break the page's styling
-				//altogether
+				//altogether.
 				if(pathToOldStylesheet == ""){
 					return;
 				}
