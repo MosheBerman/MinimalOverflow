@@ -2969,8 +2969,8 @@ table.full-diff td {
   
 }
 
-.fb-share .twitter-share{
-	display: block;
+.fb-share, .twitter-share{
+	display: block !important;
 	margin: 5px !important;
 	padding: 5px; !important;
 }
