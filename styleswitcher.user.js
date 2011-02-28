@@ -96,7 +96,7 @@ function toggle(){
 		//Otherwise, switch (back) to the old stylesheet
 		localStorage['pathToStylesheet'] = pathToNewStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "all css";	
-		document.getElementById("id_toggler_link").textContent = "allx css";		
+		document.getElementById("id_toggler_link").textContent = "all css";		
 	}
 }
 
@@ -140,6 +140,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.textContent = "| ";	
 	
 	themeSwitcher.id = "id_toggler_link";
+	//Commenting this line makes it work in FF
 	themeSwitcher.onclick = toggleAndApplyStylesheet;
 	
 	//
