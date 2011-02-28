@@ -47,6 +47,10 @@ var pathToOldStylesheet = "";
 //in multiple functions for 
 var linkElements = document.getElementsByTagName("link");
 
+if(!localStorage){
+	var localStorage = unsafeWindow.localStorage;
+}
+
 /* --------------	Invoke the userscript: --------------- */
 
 main();
