@@ -133,6 +133,12 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.innerText = "| ";
 	themeSwitcherDivider.textContent = "| ";	
 	
+	themeSwitcher.id ="id_toggler_link";
+	
+	//
+	//	TODO: Proper detection here
+	//
+	
 	//Set up the toggler
 	themeSwitcher.innerText = "all css";	
 	themeSwitcher.textContent = "all css";
@@ -142,7 +148,7 @@ function injectSwitcherIntoPage(){
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 	
 	//Apply the event handler
-	themeSwitcher.onclick = toggleAndApplyStylesheet;
+	document.getElementById('id_toggler_link').onclick = toggleAndApplyStylesheet;
 	
 }
 
