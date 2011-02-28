@@ -148,7 +148,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcher.textContent = "all css";
 	
 	//Apply the event handler
-	themeSwitcher.addEventListener("onclick", toggleAndApplyStylesheet, false);
+	themeSwitcher.addEventListener("click", toggleAndApplyStylesheet, false);
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
