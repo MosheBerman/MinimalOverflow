@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.9.4
+// @version 0.0.9.5
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -49,6 +49,9 @@ var pathToOldStylesheet = "";
 //store a reference to the link elements on the page - used
 //in multiple functions for 
 var linkElements = document.getElementsByTagName("link");
+
+//Firefox hack
+var localStorage = localStorage || unsafeWindow.localStorage
 
 /* --------------	Invoke the userscript: --------------- */
 
@@ -109,12 +112,12 @@ function toggle(){
 			
 	//If the stylesheet is not the "new" (gray) one, apply it
 
-	if(unsafeWindow.localStorage['pathToStylesheet'] == pathToNewStylesheet){
-		unsafeWindow.localStorage['pathToStylesheet'] = pathToOldStylesheet;			
+	if(localStorage['pathToStylesheet'] == pathToNewStylesheet){
+		localStorage['pathToStylesheet'] = pathToOldStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "clean css";
 	}else{								
 		//Otherwise, switch (back) to the old stylesheet
-		unsafeWindow.localStorage['pathToStylesheet'] = pathToNewStylesheet;			
+		localStorage['pathToStylesheet'] = pathToNewStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "all css";				
 	}
 }
@@ -148,7 +151,7 @@ function main(){
 	injectSwitcherIntoPage();
 	
 	//configure persistence if it hasn't been set up yet
-	if(!unsafeWindow.localStorage['pathToStylesheet']){
+	if(!localStorage['pathToStylesheet']){
 		toggle();
 	}
 	
@@ -156,7 +159,7 @@ function main(){
 	removeStackExchangeFromLogo();
 		
 	//switch to the selected stylesheet
-	switchToStylesheet(unsafeWindow.localStorage['pathToStylesheet']);
+	switchToStylesheet(localStorage['pathToStylesheet']);
 }
 
 //
@@ -165,7 +168,7 @@ function main(){
 
 function toggleAndApplyStylesheet(){
 	toggle();
-	switchToStylesheet(unsafeWindow.localStorage['pathToStylesheet']);
+	switchToStylesheet(localStorage['pathToStylesheet']);
 }
 
 //
