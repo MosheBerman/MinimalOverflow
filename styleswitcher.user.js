@@ -152,7 +152,7 @@ function injectSwitcherIntoPage(){
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 	
 	//Apply the event handler
-	document.getElementById('id_toggler_link').addEventListener("click", toggleAndApplyStylesheet);
+	document.getElementById('id_toggler_link').addEventListener("onclick", toggleAndApplyStylesheet);
 	
 }
 
