@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.1.0.1
+// @version 0.1.0.2
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -99,7 +99,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcher.innerText = "all css";	
 	
 	themeSwitcher.id = "id_toggler_link";
-	themeSwitcher.click = toggleAndApplyStylesheet;
+	themeSwitcher.onclick = toggleAndApplyStylesheet;
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
