@@ -66,7 +66,7 @@ main();
 function switchToStylesheet(sheet){
 
 	for(var i=0; i<linkElements.length; i++){	
-		if(linkElements[i].getAttribute("rel") == "stylesheet"){
+		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
 		
 			//apply the new stylesheet
 			linkElements[i].href = sheet;
@@ -140,7 +140,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.textContent = "| ";	
 	
 	themeSwitcher.id = "id_toggler_link";
-	themeSwitcher.setAttribute("click", "toggleAndApplyStylesheet");
+	themeSwitcher.setAttribute("click", toggleAndApplyStylesheet);
 	
 	//
 	//	TODO: Proper detection here
