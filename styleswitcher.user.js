@@ -79,38 +79,6 @@ function switchToStylesheet(sheet){
 	}
 }
 
-//
-//	Create the switcher UI next to the FAQ link
-//
-
-function injectSwitcherIntoPage(){
-
-	//create the switcher link
-	var themeSwitcher = document.createElement("a");
-	var themeSwitcherDivider = document.createElement("span");
-	
-	//set up the divider
-	themeSwitcherDivider.className = "lsep";
-	themeSwitcherDivider.innerText = "| ";
-	themeSwitcherDivider.textContent = "| ";	
-	
-	themeSwitcher.id = "id_toggler_link";
-	//themeSwitcher.onclick = toggleAndApplyStylesheet;
-	themeSwitcher.addEventListener('click', toggleAndApplyStylesheet);
-	
-	//
-	//	TODO: Proper detection here
-	//
-	
-	//Set up the toggler
-	themeSwitcher.innerText = "all css";	
-	themeSwitcher.textContent = "all css";
-	
-	//Add the divider and the toggler in the navbar
-	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
-	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
-}
-
 
 //
 //	Toggle the stylesheet
@@ -132,6 +100,17 @@ function toggle(){
 	}
 }
 
+
+//
+//	Toggle the stylesheet and then apply it to the page
+//
+
+function toggleAndApplyStylesheet(){
+	toggle();
+	switchToStylesheet(localStorage['pathToStylesheet']);
+}
+
+
 //
 //	Store a global reference to the initial stylesheet
 //
@@ -143,6 +122,38 @@ function storePathToOriginalStylesheet(){
 			return;
 		}
 	}
+}
+
+//
+//	Create the switcher UI next to the FAQ link
+//
+
+function injectSwitcherIntoPage(){
+
+	//create the switcher link
+	var themeSwitcher = document.createElement("a");
+	var themeSwitcherDivider = document.createElement("span");
+	
+	//set up the divider
+	themeSwitcherDivider.className = "lsep";
+	themeSwitcherDivider.innerText = "| ";
+	themeSwitcherDivider.textContent = "| ";	
+	
+	themeSwitcher.id = "id_toggler_link";
+	themeSwitcher.onclick = toggleAndApplyStylesheet;
+	themeSwitcher.addEventListener('click', toggleAndApplyStylesheet);
+	
+	//
+	//	TODO: Proper detection here
+	//
+	
+	//Set up the toggler
+	themeSwitcher.innerText = "all css";	
+	themeSwitcher.textContent = "all css";
+	
+	//Add the divider and the toggler in the navbar
+	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
+	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
 }
 
 //
@@ -169,15 +180,6 @@ function main(){
 	removeStackExchangeFromLogo();
 		
 	//switch to the selected stylesheet
-	switchToStylesheet(localStorage['pathToStylesheet']);
-}
-
-//
-//	Toggle the stylesheet and then apply it to the page
-//
-
-function toggleAndApplyStylesheet(){
-	toggle();
 	switchToStylesheet(localStorage['pathToStylesheet']);
 }
 
