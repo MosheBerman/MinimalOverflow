@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.1.2.0
+// @version 0.1.2.3
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -50,8 +50,11 @@ var pathToOldStylesheet = "";
 //in multiple functions for 
 var linkElements = document.getElementsByTagName("link");
 
-//Firefox hack
-var localStorage = localStorage || unsafeWindow.localStorage;
+
+//FF hack
+if(unsafeWindow){
+	localStorage = unsafeWindow.localStorage;
+}
 
 /* --------------	Invoke the userscript: --------------- */
 
@@ -140,8 +143,6 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.textContent = "| ";	
 	
 	themeSwitcher.id = "id_toggler_link";
-	//Commenting this line makes it work in FF
-	themeSwitcher.onclick = toggleAndApplyStylesheet;
 	
 	//
 	//	TODO: Proper detection here
@@ -150,6 +151,9 @@ function injectSwitcherIntoPage(){
 	//Set up the toggler
 	themeSwitcher.innerText = "all css";	
 	themeSwitcher.textContent = "all css";
+	
+	//Commenting this line makes it work in FF
+	themeSwitcher.onclick = toggleAndApplyStylesheet;
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
@@ -169,7 +173,7 @@ function main(){
 	storePathToOriginalStylesheet();
 	
 	//add a switcher to the menu
-	//injectSwitcherIntoPage();
+	injectSwitcherIntoPage();
 	
 	//configure persistence if it hasn't been set up yet
 	if(!localStorage['pathToStylesheet']){
