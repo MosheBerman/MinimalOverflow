@@ -584,10 +584,11 @@ a.comment-user.owner {
 }
 
 .vcard .user-details{
-  -moz-border-radius 5px;  
-  -webkit-border-radius 5px;  
-  border-radius 5px;
-  border: 1px solid #bbb;
+  -moz-border-radius: 5px;  
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #cacaca;
 }
 
 #revisions {
