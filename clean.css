@@ -253,6 +253,7 @@ p code {
 .post-signature {
   padding-left: 5px;
   padding-top: 2px;
+  margin-right: 10px;
   text-align: left;
   vertical-align: top;
   width: 175px;
