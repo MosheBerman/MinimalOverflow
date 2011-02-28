@@ -493,8 +493,7 @@ a.comment-user.owner {
 }
 #footer {
   color: #444;
-  background: #777;
-  border-top: 7px solid #000;
+  border-top: 1px solid #000;
   clear: both;
   padding: 15px;
   margin-top: 30px;
@@ -1254,6 +1253,8 @@ a.comment-user.owner {
 }
 .newuser {
   border-left: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;  
+  background-color: #fff;
   color: #888;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -2179,6 +2180,11 @@ div.form-item-info {
 .vote-accepted-bounty {
   background-position: 0px -510px;
 }
+
+#footer-sites{
+	color: #555 !important;
+}
+
 #footer-flair {
   width: 168px;
   height: 67px;
