@@ -498,6 +498,7 @@ a.comment-user.owner {
   padding: 15px;
   margin-top: 30px;
 }
+
 #footer-menu {
   color: #999;
   float: left;
@@ -506,8 +507,9 @@ a.comment-user.owner {
   width: 770px;
 }
 #footer-menu a {
-  color: #fff;
+  color: #999;
 }
+
 #footer-sites {
   line-height: 20px;
   padding-bottom: 10px;
