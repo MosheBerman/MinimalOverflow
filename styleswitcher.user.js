@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.9.2
+// @version 0.0.9.4
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -87,19 +87,17 @@ function injectSwitcherIntoPage(){
 	var themeSwitcherDivider = document.createElement("span");
 	
 	//set up the divider
-	themeSwitcherDivider.setAttribute("className","lsep");
-	themeSwitcherDivider.setAttribute("innerText","| ");
+	themeSwitcherDivider.className = "lsep";
+	themeSwitcherDivider.innerText = "| ";
 	
 	//Set up the toggler
-	themeSwitcher.setAttribute("innerText", "all css");
-	themeSwitcher.setAttribute("id","id_toggler_link");
+	themeSwitcher.innerText = "all css";
+	themeSwitcher.id = "id_toggler_link";
+	themeSwitcher.addEventListener("click", toggleAndApplyStylesheet);
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
-	
-	//Add the event handler for the toggler
-	themeSwitcher.click = toggleAndApplyStylesheet;
 }
 
 
@@ -111,12 +109,12 @@ function toggle(){
 			
 	//If the stylesheet is not the "new" (gray) one, apply it
 
-	if(localStorage['pathToStylesheet'] == pathToNewStylesheet){
-		localStorage['pathToStylesheet'] = pathToOldStylesheet;			
+	if(unsafeWindow.localStorage['pathToStylesheet'] == pathToNewStylesheet){
+		unsafeWindow.localStorage['pathToStylesheet'] = pathToOldStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "clean css";
 	}else{								
 		//Otherwise, switch (back) to the old stylesheet
-		localStorage['pathToStylesheet'] = pathToNewStylesheet;			
+		unsafeWindow.localStorage['pathToStylesheet'] = pathToNewStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "all css";				
 	}
 }
@@ -150,7 +148,7 @@ function main(){
 	injectSwitcherIntoPage();
 	
 	//configure persistence if it hasn't been set up yet
-	if(!localStorage['pathToStylesheet']){
+	if(!unsafeWindow.localStorage['pathToStylesheet']){
 		toggle();
 	}
 	
@@ -158,7 +156,7 @@ function main(){
 	removeStackExchangeFromLogo();
 		
 	//switch to the selected stylesheet
-	switchToStylesheet(localStorage['pathToStylesheet']);
+	switchToStylesheet(unsafeWindow.localStorage['pathToStylesheet']);
 }
 
 //
@@ -167,7 +165,7 @@ function main(){
 
 function toggleAndApplyStylesheet(){
 	toggle();
-	switchToStylesheet(localStorage['pathToStylesheet']);
+	switchToStylesheet(unsafeWindow.localStorage['pathToStylesheet']);
 }
 
 //
