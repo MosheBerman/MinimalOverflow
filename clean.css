@@ -1253,20 +1253,20 @@ a.comment-user.owner {
   padding-bottom: 7px;
 }
 .newuser {
-  background-color: #FFEFC6;
-  color: #735005;
+  border: 1px solid #888;
+  color: #888;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding-top: 8px;
 }
 .newuser h4 {
-  color: #AE0000;
+  color: #000;
 }
 .newuser a {
   font-weight: bold;
   text-decoration: underline;
-  color: #735005;
+  color: #aaa;
   text-decoration: underline;
 }
 .module p {
@@ -1606,8 +1606,8 @@ div.form-item-info {
   border-radius: 6px;
 }
 .badge:hover, .badge-tag:hover {
-  border: 1px solid #555;
-  background-color: #555;
+  border: 1px solid #aaa;
+  background-color: #aaa;
   text-decoration: none;
 }
 .badge-tag:hover {
