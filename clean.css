@@ -583,14 +583,6 @@ a.comment-user.owner {
   line-height: 17px;
 }
 
-.vcard .user-details{
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  padding: 5px !important; 
-  border: 1px solid #cacaca;
-}
-
 #revisions {
   margin-top: 20px;
   margin-left: 20px;
