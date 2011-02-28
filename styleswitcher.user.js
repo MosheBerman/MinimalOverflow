@@ -153,7 +153,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcher.textContent = "all css";
 	
 	//Commenting this line makes it work in FF
-	themeSwitcher.onclick = toggleAndApplyStylesheet;
+	document.getElementById('id_toggler_link').onclick = toggleAndApplyStylesheet;
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
