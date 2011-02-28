@@ -1,10 +1,10 @@
 // ==UserScript==
 //
-// @name	Stylesheet Switcher
+// @name MinimalOverflow
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.1.3.1
+// @version 0.1.3.2
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -143,14 +143,13 @@ function injectSwitcherIntoPage(){
 	themeSwitcher.innerText = "all css";	
 	themeSwitcher.textContent = "all css";
 	
-	//Commenting this line makes it work in FF
-	//document.getElementById('id_toggler_link').addEventListener('click',toggleAndApplyStylesheet);
-	
-	themeSwitcher.onclick = toggleAndApplyStylesheet;
-	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
 	document.getElementById("hlinks-custom").appendChild(themeSwitcher);
+	
+	//Apply the event handler
+	themeSwitcher.onclick = toggleAndApplyStylesheet;
+	
 }
 
 //
