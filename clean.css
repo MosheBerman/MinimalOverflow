@@ -677,10 +677,9 @@ a.comment-user.owner {
   background-color: #7d7d7d;
   font-size: 90%;
   font-weight: bold;
-  margin-right: 5px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  margin-right: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 .bounty-indicator-tab {
   display: inline-block;
