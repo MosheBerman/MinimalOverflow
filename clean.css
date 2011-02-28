@@ -561,6 +561,10 @@ a.comment-user.owner {
 .user-info {
   height: 35px;
   width: 185px;
+  -moz-border-radius 5px;  
+  -webkit-border-radius 5px;  
+  border-radius 5px;
+  border: 1px solid #bbb;
 }
 .user-info .user-gravatar32 {
   float: left;
