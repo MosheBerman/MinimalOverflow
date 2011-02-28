@@ -802,7 +802,7 @@ a.comment-user.owner {
 }
 #header {
   width: 960px;
-  height: 120px;
+  height: 100px;
   margin: 0 auto 5px auto;
   padding-bottom: 15px !ie7;
 }
@@ -811,11 +811,11 @@ a.comment-user.owner {
   width: auto;
   padding: 3px 10px 0px 10px;
   float: right;
-  height: 28px;
+  height: 26px;
   line-height: 22px;
 }
 #header #hlogo {
-  height: 100px;
+  height: 80px;
   width: 250px;
   float: left;
   margin-top: 10px;
