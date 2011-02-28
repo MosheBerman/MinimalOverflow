@@ -1253,7 +1253,7 @@ a.comment-user.owner {
   padding-bottom: 7px;
 }
 .newuser {
-  border: 1px solid #888;
+  border-left: 1px solid #bbb;
   color: #888;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
