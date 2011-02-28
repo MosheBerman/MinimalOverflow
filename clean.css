@@ -329,12 +329,12 @@ p code {
   text-decoration: none;
 }
 .summaryinfo {
-  color: #808185;
+  color: #888;
   text-align: center;
 }
 .summarycount {
   text-align: center;
-  color: #808185;
+  color: #888;
   font-size: 350%;
   font-weight: bold;
 }
@@ -1171,6 +1171,7 @@ a.comment-user.owner {
 .summary {
   float: left;
   width: 635px;
+  margin-left: 5px;
 }
 .excerpt .started {
   float: right;
