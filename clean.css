@@ -880,12 +880,12 @@ a.comment-user.owner {
 
 .nav .youarehere {
   color: #555;
-	
 }
 
 .youarehere a {
-	text-decoration: overline !important;
+	border-bottom: 1px dashed #343434;
 }
+
 .nav li:hover {
 	text-decoration: underline;
 }
@@ -999,7 +999,6 @@ a.comment-user.owner {
   color: black;
   font-size: 120%;
   height: 30px;
-  line-height: 28px;
   margin-top: 3px;
   padding: 0px 11px 0px 11px;
   -webkit-border-radius: 5px;
