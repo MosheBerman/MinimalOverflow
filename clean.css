@@ -986,13 +986,12 @@ a.comment-user.owner {
   border-radius: 5px;  
 }
 #tabs a:hover {
-  background: #fff;
   border: 1px solid #aaa;
-  margin-top: 9px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;  
   border-radius: 5px;  
 }
+
 #tabs a.youarehere {
   background: #fff;
   border: 1px solid #aaa;
@@ -1005,6 +1004,13 @@ a.comment-user.owner {
   -moz-border-radius: 5px;  
   border-radius: 5px;    
 }
+
+#tabs a.youarehere .bounty-indicator-tab{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;  
+  border-radius: 0;  
+}
+
 .subtabs {
   width: 100%;
   float: right;
