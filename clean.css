@@ -250,10 +250,10 @@ p code {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
 .post-signature {
   padding-left: 5px;
   padding-top: 2px;
-  margin-right: 10px;
   text-align: left;
   vertical-align: top;
   width: 175px;
@@ -269,7 +269,8 @@ p code {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;	
 	border-radius: 5px;	
-	background-color: #c9c9c9;	
+	background-color: #c9c9c9;
+	margin-right: 10px;
 }
 .deleted-answer {
   background-color: #e3d9d9;
