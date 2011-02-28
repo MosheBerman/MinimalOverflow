@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.9.5
+// @version 0.0.9.7
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -40,7 +40,7 @@
 /* ---------------------- (Global) Variables ----------------------- */
 
 //This URL will be loaded as the page's stylesheet "link" element
-var pathToNewStylesheet = "https://github.com/MosheBerman/MinimalOverflow/raw/master/clean.css"
+var pathToNewStylesheet = "https://github.com/MosheBerman/MinimalOverflow/raw/master/clean.css";
 
 //A variable to store a reference to the original stylesheet, used 
 //for the toggler, in case the user wants to revert to the original
@@ -51,7 +51,7 @@ var pathToOldStylesheet = "";
 var linkElements = document.getElementsByTagName("link");
 
 //Firefox hack
-var localStorage = localStorage || unsafeWindow.localStorage
+var localStorage = localStorage || unsafeWindow.localStorage;
 
 /* --------------	Invoke the userscript: --------------- */
 
@@ -96,7 +96,7 @@ function injectSwitcherIntoPage(){
 	//Set up the toggler
 	themeSwitcher.innerText = "all css";
 	themeSwitcher.id = "id_toggler_link";
-	themeSwitcher.addEventListener("click", toggleAndApplyStylesheet);
+	themeSwitcher.click = toggleAndApplyStylesheet;
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
