@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.1.0.2
+// @version 0.1.0.3
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -66,7 +66,7 @@ main();
 function switchToStylesheet(sheet){
 
 	for(var i=0; i<linkElements.length; i++){	
-		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
+		if(linkElements[i].getAttribute("rel") == "stylesheet"){
 		
 			//apply the new stylesheet
 			linkElements[i].href = sheet;
@@ -91,15 +91,19 @@ function injectSwitcherIntoPage(){
 	
 	//set up the divider
 	themeSwitcherDivider.className = "lsep";
-	themeSwitcherDivider.textContent = "| ";
-	themeSwitcherDivider.innerText = "| ";	
-	
-	//Set up the toggler
-	themeSwitcher.textContent = "all css";
-	themeSwitcher.innerText = "all css";	
+	themeSwitcherDivider.innerText = "| ";
+	themeSwitcherDivider.textContent = "| ";	
 	
 	themeSwitcher.id = "id_toggler_link";
 	themeSwitcher.onclick = toggleAndApplyStylesheet;
+	
+	//
+	//	TODO: Proper detection here
+	//
+	
+	//Set up the toggler
+	themeSwitcher.innerText = "all css";	
+	themeSwitcher.textContent = "all css";
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
@@ -118,10 +122,12 @@ function toggle(){
 	if(localStorage['pathToStylesheet'] == pathToNewStylesheet){
 		localStorage['pathToStylesheet'] = pathToOldStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "clean css";
+		document.getElementById("id_toggler_link").textContent = "clean css";		
 	}else{								
 		//Otherwise, switch (back) to the old stylesheet
 		localStorage['pathToStylesheet'] = pathToNewStylesheet;			
-		document.getElementById("id_toggler_link").innerText = "all css";				
+		document.getElementById("id_toggler_link").innerText = "all css";	
+		document.getElementById("id_toggler_link").textContent = "allx css";		
 	}
 }
 
