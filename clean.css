@@ -1269,6 +1269,12 @@ a.comment-user.owner {
   color: #aaa;
   text-decoration: underline;
 }
+
+/* We don't want right alignment in the newuser sidebar */
+.newuser .ar{
+	text-align: left !important;
+}
+
 .module p {
   font-size: 120%;
   line-height: 1.3;
