@@ -133,12 +133,6 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.innerText = "| ";
 	themeSwitcherDivider.textContent = "| ";	
 	
-	themeSwitcher.setAttribute("id","id_toggler_link");
-	
-	//
-	//	TODO: Proper detection here
-	//
-	
 	//Set up the toggler
 	themeSwitcher.innerText = "all css";	
 	themeSwitcher.textContent = "all css";
