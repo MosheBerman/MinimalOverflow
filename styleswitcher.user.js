@@ -53,7 +53,7 @@ var linkElements = document.getElementsByTagName("link");
 
 //FF hack
 if(unsafeWindow){
-	localStorage = unsafeWindow.localStorage;
+	var localStorage = unsafeWindow.localStorage;
 }
 
 /* --------------	Invoke the userscript: --------------- */
