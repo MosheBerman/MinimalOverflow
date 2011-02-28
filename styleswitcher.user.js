@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.1.2.3
+// @version 0.1.3
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -22,10 +22,6 @@
 // @include      http://meta.seasonedadvice.com/*
 // @include      http://stackapps.com/*
 // @include      http://*.stackexchange.com/*
-// @exclude      http://chat.stackexchange.com/*
-// @exclude      http://chat.*.stackexchange.com/*
-// @exclude      http://api.*.stackexchange.com/*
-// @exclude      http://data.stackexchange.com/*
 //
 // @author Moshe Berman
 //
@@ -91,7 +87,7 @@ function toggle(){
 			
 	//If the stylesheet is not the "new" (gray) one, apply it
 
-	if(localStorage['pathToStylesheet'] == pathToNewStylesheet){
+	if(localStorage['pathToStylesheet'].toString() == pathToNewStylesheet){
 		localStorage['pathToStylesheet'] = pathToOldStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "clean css";
 		document.getElementById("id_toggler_link").textContent = "clean css";		
@@ -142,7 +138,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.innerText = "| ";
 	themeSwitcherDivider.textContent = "| ";	
 	
-	themeSwitcher.id = "id_toggler_link";
+	themeSwitcher.setAttribute("id","id_toggler_link");
 	
 	//
 	//	TODO: Proper detection here
@@ -153,7 +149,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcher.textContent = "all css";
 	
 	//Commenting this line makes it work in FF
-	document.getElementById('id_toggler_link').onclick = toggleAndApplyStylesheet;
+	document.getElementById('id_toggler_link').addEventListener('click',toggleAndApplyStylesheet);
 	
 	//Add the divider and the toggler in the navbar
 	document.getElementById("hlinks-custom").appendChild(themeSwitcherDivider);
