@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.0.8.9
+// @version 0.0.9.0
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -91,7 +91,7 @@ function injectSwitcherIntoPage(){
 	themeSwitcherDivider.setAttribute("innerText", "| ");
 	
 	//Set up the toggler
-	themeSwitcher.setAtribute("innerText", "all css");
+	themeSwitcher.setAttribute("innerText", "all css");
 	themeSwitcher.setAttribute("id","id_toggler_link");
 	themeSwitcher.addEventListener("click", toggleAndApplyStylesheet);
 	
