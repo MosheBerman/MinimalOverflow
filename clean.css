@@ -1611,6 +1611,7 @@ div.form-item-info {
 
 .required-tag{
 	font-weight: bold;
+	font-style: oblique;
 }
 
 .post-tag, .post-text .post-tag, #wmd-preview a.post-tag {
