@@ -1609,6 +1609,9 @@ div.form-item-info {
 	font-style: oblique;
 }
 
+.required-tag{
+	font-weight: bold;
+}
 
 .post-tag, .post-text .post-tag, #wmd-preview a.post-tag {
   color: #7d7d7d !important;
