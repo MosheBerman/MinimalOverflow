@@ -221,7 +221,8 @@ p code {
   height: 25px;
   font-size: 190%;
   font-weight: bold;
-  padding: auto 15px;
+  padding: auto 120x;
+  text-align: center;
 }
 .vt {
   vertical-align: top;
@@ -235,7 +236,6 @@ p code {
 .votecell {
   width: 60px;
   vertical-align: top;
-  padding: 5px;
 }
 #answers {
   clear: both;
