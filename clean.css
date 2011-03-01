@@ -350,10 +350,12 @@ p code {
   color: #ccc;
   font-size: 110%;
 }
+
 .post-taglist {
   margin-bottom: 10px;
   clear: both;
 }
+
 .post-menu {
   padding-top: 2px;
 }
@@ -1602,6 +1604,12 @@ div.form-item-info {
 .selected-master-preview {
   margin-top: 10px;
 }
+
+.moderator-tag{
+	font-style: oblique;
+}
+
+
 .post-tag, .post-text .post-tag, #wmd-preview a.post-tag {
   color: #7d7d7d !important;
   /*background-color: #7d7d7d;*/
