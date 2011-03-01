@@ -270,7 +270,7 @@ p code {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;	
 	border-radius: 5px;	
-	background-color: #d3d3d3;
+	background-color: #fff !important;
 	margin-left: -10px;
 }
 .deleted-answer {
