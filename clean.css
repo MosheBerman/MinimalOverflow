@@ -342,8 +342,9 @@ p code {
   font-weight: bold;
 }
 .summarycount p{
-	margin-top: 3px;
+	padding-top: 5px;
 }
+
 .lsep {
   margin: 0px 2px 0px 2px;
   color: #ccc;
