@@ -29,7 +29,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
+body{
   background: #FFF;
   color: #000;
   font-family: "AxelBold", "Lucida Grande", "Verdana", "Liberation Sans", Arial, Liberation Sans, DejaVu Sans, sans-serif;
@@ -951,7 +951,6 @@ a.comment-user.owner {
   float: left;
   margin-bottom: 40px;
   width: 735px;
-  overflow: hidden;
 }
 #mainbar-full {
   width: 960px;
