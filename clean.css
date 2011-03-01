@@ -426,6 +426,10 @@ tr.comment-hover {
   margin-top: 3px;
   margin-left: 2px;
 }
+
+.comment-text a{
+  border-bottom: 1px dashed #373737 !important;
+}
 a.comment-user {
   white-space: nowrap;
   padding: 0;
@@ -1175,6 +1179,7 @@ a.comment-user.owner {
   float: left;
   width: 635px;
 }
+
 .excerpt .started {
   float: right;
   width: 185px;
