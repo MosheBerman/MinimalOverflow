@@ -432,7 +432,7 @@ tr.comment-hover {
 }
 
 .comment-text a:hover{
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
 a.comment-user {
