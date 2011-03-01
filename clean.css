@@ -1112,14 +1112,11 @@ a.comment-user.owner {
 }
 
 .views {
-  padding: 15px;
+  padding: 5px;
   color: #999;
   text-align: center;
 }
 
-.views div{
-  padding: 15px;
-}
 
 .cool {
   color: #999 !important;
