@@ -430,6 +430,11 @@ tr.comment-hover {
 .comment-text a{
   border-bottom: 1px dashed #373737 !important;
 }
+
+.comment-text a:hover{
+  border-bottom: none;
+}
+
 a.comment-user {
   white-space: nowrap;
   padding: 0;
