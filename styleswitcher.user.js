@@ -4,7 +4,7 @@
 //
 // @namespace	http://mosheberman.com
 // @description   Loads a B&W theme into the StackExchange sites and adds a toggler to the SE topbar.
-// @version 0.1.5
+// @version 5
 //
 // @include      http://stackoverflow.com/*
 // @include      http://meta.stackoverflow.com/*
@@ -64,14 +64,14 @@ main();
 function switchToStylesheet(sheet){
 
 	for(var i=0; i<linkElements.length; i++){	
-		if(linkElements[i].getAttribute("rel").toString() == "stylesheet"){
+		if(linkElements[i].getAttribute("rel") == "stylesheet"){
 		
 			//apply the new stylesheet
 			linkElements[i].href = sheet;
 			
 			//We only want to replace the first stylesheet, so return.
-			//If SO decides to override anything here, just put it in a 
-			//second stylesheet and link tag.
+			//If SO decides to change any styles, just put it in a 
+			//second stylesheet and link tag. The script should safely ignore it.
 			return;
 		}
 	}
@@ -86,7 +86,7 @@ function toggle(){
 			
 	//If the stylesheet is not the "new" (gray) one, apply it
 
-	if(localStorage['pathToStylesheet'].toString() == pathToNewStylesheet){
+	if(localStorage['pathToStylesheet'] == pathToNewStylesheet){
 		localStorage['pathToStylesheet'] = pathToOldStylesheet;			
 		document.getElementById("id_toggler_link").innerText = "clean css";
 		document.getElementById("id_toggler_link").textContent = "clean css";		
